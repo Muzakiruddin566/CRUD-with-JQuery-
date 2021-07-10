@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SURWAY FROM</title>
+
+	<!-- META TAG LINK -->
+	<meta charset="UTF-8">
+	<!-- For responsive -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- javascript link -->
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div id=Header class="mt-3">
+
+			<div class="header text-center">
+
+				<div class="row text-white">
+
+					<div class="col-md-12">
+
+						<h1>Registration Form</h1>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			 
+		</div>
+
+		<div id=Form class="mt-2">
+			
+			<div class="form" onsubmit="return false">
+
+				<div class="text-white">
+
+					<form>
+
+						<div class="form-row">
+
+						    <div class="form-group col-md-6">
+
+						      	<label for="inputfirstname">First Name</label>
+						      	<input type="text" class="form-control inputfirstname" id="inputfirstname"  placeholder="First Name">
+
+						    </div>
+
+						    <div class="form-group col-md-6">
+
+	      						<label for="inputlastname">Last Name</label>
+	      						<input type="text" class="form-control inputlastname" id="inputlastname" placeholder="Last Name">
+	      					</div> 
+	    				</div>
+	    				<div class="form-row">
+
+						    <div class="form-group col-md-6">
+
+						      	<label for="inputrollno">ROLL NO</label>
+						   		<input type="email" class="form-control inputrollno" id="inputrollno" placeholder="Roll number...x" disabled>
+
+						    </div>
+
+						    <div class="form-group col-md-6">
+							    <label for="inputusername">username</label>
+							    <input type="text" class="form-control inputusername" id="inputusername" >
+	      					</div> 
+	    				</div>
+
+	  					<div class="form-group">
+
+						    <label for="inputEmail">Email</label>
+						    <input type="email" class="form-control inputEmail" id="inputEmail" placeholder="Enter Email">
+
+						</div>
+						<div class="form-row">
+
+							<div class="form-group col-md-6">
+
+							    <label for="inputphonenumber">Phone No</label>
+							    <input type="number" class="form-control inputphonenumber" id="inputphonenumber" placeholder="03**********">
+
+							</div>
+
+						</div>
+
+	  					<div class="form-row">
+
+	    					<div class="form-group col-md-4">
+
+	      						<label for="inputdegree">Degree</label>
+	      						<input type="text" class="form-control inputdegree" id="inputdegree">
+
+	    					</div>
+
+	    					<div class="form-group col-md-4">
+
+	      						<label for="inputmonth">month</label>
+
+		      					<select id="inputmonth" class="form-control inputmonth">
+
+		        					<option selected>Choose...</option>
+
+		        					<option>January</option>
+		        					<option>February</option>
+		        					<option>March</option>
+		        					<option>April</option>
+		        					<option>May</option>
+		        					<option>June</option>
+		        					<option>July</option>
+		        					<option>August</option>
+		        					<option>September</option>
+		        					<option>Octobar</option>
+		        					<option>November</option>
+		        					<option>December</option>
+
+		      					</select>
+
+	    					</div>
+
+	    					<div class="form-group col-md-4">
+
+	      						<label for="inputyear">year</label>
+	      						<input type="number" class="form-control inputyear" id="inputyear">
+
+	    					</div>
+
+	  					</div>
+
+	  					<button id="addBtn" type="button" class="btn btn-primary button1">Submit</button>
+	  					<button type="reset" class="btn btn-primary ">Reset</button>
+	  					<!-- <button type="button" class="btn btn-primary " data-toggle="modal" data-target=".bd-example-modal-lg">View</button> -->
+
+					</form>
+
+				</div>
+				
+			</div>
+
+		</div>
+		
+
+		<div class="modal  fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+			    <div class="modal-content scroll">
+			      <table class="table table-bordered" id="table-1">
+
+					<thead class="thead-dark" id="th-1">
+
+					    <tr id="tr-1" class="trow">
+					      <th scope="col" >#</th>
+					      <th scope="col" >First Name</th>
+					      <th scope="col" >Last Name</th>
+					      <th scope="col">User Name</th>
+					      <th scope="col" >Email</th>
+					      <th scope="col" >Degree</th>
+					      <th scope="col" >year</th>
+					      <th scope="col" >Phone Number</th>
+					      <th scope="col" >Roll Number</th>
+					   
+					    </tr>
+
+					<tbody id="table-body" class="table-body ">
+						<tr>
+							
+							<!-- <td class="id"></td>
+							<td class="First"><p class="m"></p></td>
+							<td class="last"></td>
+							<td class="User"></td>
+							<td class="emal"></td>
+							<td class="deg"></td>
+							<td class="yer"></td>
+							<td class="number"></td>
+							<td class="roll"></td>
+ -->
+						</tr>
+
+					</tbody>
+					
+				</table>
+			</div>
+			<div class="modal-footer bg-dark">
+       			 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      		</div>
+		</div>
+	</div>
+		<!-- FROM END -->
+
+		<div id=Table class="mt-3">
+
+			<table class="table table-bordered" id="table-1">
+
+					<thead class="thead-dark" id="th-1">
+
+					    <tr id="tr-1 nr" class="trow">
+					      <th scope="col" id="tc-1">#</th>
+					      <th scope="col" id="tc-1">First Name</th>
+					      <th scope="col" id="tc-1">Last Name</th>
+					      <th scope="col" id="tc-1">User Name</th>
+					      <th scope="col" id="tc-1">Email</th>
+					      <th scope="col" id="tc-1">Degree</th>
+					      <th scope="col" id="tc-1">year</th>
+					      <th scope="col" id="tc-1">Phone Number</th>
+					      <th scope="col" id="tc-1">Roll Number</th>
+					       <th scope="col" id="tc-1">Action</th>
+					    </tr>
+
+					</thead>
+
+					<tbody  class="color tbody">
+
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+		<!-- TABLE END -->
+		
+	<!-- MAIN DIV END
+ -->
+
+
+
+	 <script src="jQUERY/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
